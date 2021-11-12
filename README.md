@@ -33,6 +33,16 @@ The Krumhansl-Schmuckler algorithm was developed, and it was built on the concep
 
 Now we can generate and recreate music. After getting all the notes from a particular song (for this use music_notes_detection.py at an extremely slow framerate such that it can identify each and every single note), we can put them all together while specifying a particular note length for each note.
 
+After generating one note, I have plotted the results and can be explained below:
+
+This image is for the sound wave of the note generated
+
+![soundplot](img/soundwave_middlec.jpg)
+
+This image is after performing the Fast Fourier Transform on the note generated, notice the singular peak at the corresponding frequency
+
+![FFT](img/fft_middlec.jpg)
+
 There are a few parameters we keep in mind like the bar length (specified by the time-signature of a song - most commonly it is 4/4, for waltz it is 3/4 and so on - it can be thought as the number of crotchets in particular time frame), the ADSR levels (Attack, Decay, Sustain and Release) that are used to control the loudness of the song and the sustain levels, which are concerned with how long a note needs to be sustained with for how long.
 
 In this piece of code I have recreated the first part of the violin duet of Canon in D. Any song can be recreated in this way, as long as the length of the bar specified is not violated and the notes are known.
