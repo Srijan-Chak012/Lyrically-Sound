@@ -1,4 +1,4 @@
-# Music-notes-detection
+# Lyrically Sound: Music-notes-detection
 This project has 3 parts to it:
 1. Note-detection which can detect a note in a song
 2. Scale detection which can detect the scale a song is based on
